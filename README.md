@@ -40,40 +40,40 @@ metrics, graphing options and configuration.
 
 **Improvements to be made on service**
 
-  - Add authorisation using API key
-  - Add validation on request model and return 400 if it fails. Can use FluentValidation for this
-  - Add data to SQL DB and read into Dto before using a mapper to return response model
+	  - Add authorisation using API key
+	  - Add validation on request model and return 400 if it fails. Can use FluentValidation for this
+	  - Add data to SQL DB and read into Dto before using a mapper to return response model
 
 **Unit tests**
 	
-Energy Data Handler
-
-  - Successful search with date range returns data without anomalies
-  - Successful search with date range returns data with anomalies
-  - Invalid search request returns validation exception (Multiple examples)
+	Energy Data Handler
 	
-Weather Data Handler
-
-  - Successful search with date range returns data without anomalies
-  - Successful search with date range returns data with anomalies
-  - Invalid search request returns validation exception (Multiple examples)
+	  - Successful search with date range returns data without anomalies
+	  - Successful search with date range returns data with anomalies
+	  - Invalid search request returns validation exception (Multiple examples)
+		
+	Weather Data Handler
+	
+	  - Successful search with date range returns data without anomalies
+	  - Successful search with date range returns data with anomalies
+	  - Invalid search request returns validation exception (Multiple examples)
 
 
 **Integration tests**
 	
-Energy Data Handler
-
-  - Successful search with date range returns data without anomalies
-  - Successful search with date range returns data with anomalies
-  - Invalid search request returns 400
+	Energy Data Handler
 	
-Weather Data Handler
-
-  - Successful search with date range returns data without anomalies
-  - Successful search with date range returns data with anomalies
-  - Invalid search request returns 400
+	  - Successful search with date range returns data without anomalies
+	  - Successful search with date range returns data with anomalies
+	  - Invalid search request returns 400
+		
+	Weather Data Handler
+	
+	  - Successful search with date range returns data without anomalies
+	  - Successful search with date range returns data with anomalies
+	  - Invalid search request returns 400
 
 **Improvements to be made on web app**
 
-  - Update requests to use authorisation
-  - Create an average of summary and temperature displayed above the graph
+	  - Update requests to use authorisation
+	  - Create an average of summary and temperature displayed above the graph
