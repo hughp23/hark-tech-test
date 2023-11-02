@@ -77,3 +77,4 @@ metrics, graphing options and configuration.
 
 	  - Update requests to use authorisation
 	  - Create an average of summary and temperature displayed above the graph
+	  - Add Cypress testing around loading data on graph
