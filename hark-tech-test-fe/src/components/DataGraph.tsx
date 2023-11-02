@@ -40,7 +40,7 @@ export const DataGraph = () => {
       );
       
       const options = {
-        // responsive: true,
+        responsive: true,
         interaction: {
           mode: 'index' as const,
           intersect: false,
@@ -124,12 +124,10 @@ export const DataGraph = () => {
     }
 
     const handleOnStartDateChange = useEventCallback((value: Date | null) => {
-      console.log(value);
       value && setStartDate(value);
     })
 
     const handleOnEndDateChange = useEventCallback((value: Date | null) => {
-      console.log(value);
       value && setEndDate(value);
     })
 
@@ -165,8 +163,6 @@ export const DataGraph = () => {
         handleGetEnergyData(startDate, endDate);
         handleGetWeatherData(startDate, endDate);
     }, [startDate, endDate]);
-
-    console.log(energyData);
 
     return (
         <Card>
